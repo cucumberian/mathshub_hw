@@ -46,11 +46,21 @@ figcaption > span, .green{
     font-style: normal;
 }
 
+header>nav {
+    display: flex;
+    justify-content: center;
+}
+nav>span {
+    padding: 0 2em;
+    margin: 0 1em;
+}
+
+
 footer {
-    padding: 0.3em 2em;
-    padding-top: 1em;
     display: flex;
     justify-content: space-between;
+    padding: 0.3em 2em;
+    padding-top: 1em;
 }
 footer > * {
     font-size: 12px;
