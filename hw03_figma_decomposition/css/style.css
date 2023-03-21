@@ -66,6 +66,22 @@ section {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 47px;
+    position: relative;
+    bottom: -10px;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: gilroy-medium;
+    font-size: 34px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* first_section */
 #first_section {
@@ -90,20 +106,7 @@ section {
     padding-right: 50px;
 }
 
-h1 {
-    font-size: 47px;
-    position: relative;
-    bottom: -10px;
-    padding: 0;
-    margin: 0;
-}
-h3 {
-    font-family: gilroy-medium;
-    font-size: 34px;
-    line-height: 42px;
-    padding: 0;
-    margin: 0;
-}
+
 
 .lang_buttons {
     display: flex;
@@ -121,12 +124,14 @@ h3 {
     transform: rotate(180deg);
     direction: rtl;
 }
+
 a.active_lang{
     color: black;
     border-top: 2px solid black;
 }
-#first_section div {
-    overflow: hidden;
+
+#first_section img {
+    /* transform: translate(0px, 1px); */
 }
 
 /* about me */
@@ -278,10 +283,12 @@ button {
     display: flex;
     align-items: center;
 }
-
+button:hover {
+    cursor: pointer;
+}
 button > span {
     box-sizing:border-box;
-    transform: translate(0px, 3px);
+    transform: translate(0px, 2px);
     margin: 0 auto;
 }
 
