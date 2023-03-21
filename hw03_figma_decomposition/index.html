@@ -19,41 +19,150 @@
             <a href="#contacts">Contacts</a>
         </nav>
     </header>
-
+    <!-- <hr> -->
     <main>
-        <section>
-            <h1>Denis Novik</h1>
-            <p>
-                UX| UI designer
-                <br>
-                24 years old, Minsk
-            </p>
-            <div>
-                <button>ru</button>
-                <button>eng</button>
+        <section id="first_section">
+            <div id="about_div">
+                <div>
+                    <h1>Denis<br> Novik</h1>
+                </div>
+                <div>
+                    <p>
+                        UX | UI designer
+                        <br>
+                        24 years old, Minsk
+                    </p>
+                </div>
+                <div class="lang_buttons">
+                    <a href="#">RU</a>
+                    <a href="#" class="active_lang">ENG</a>
+                </div>
             </div>
-            <img src="./img/BSPP2266.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
+            <!-- <div> -->
+                <img src="./img/BSPP2266.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
+            <!-- </div> -->
         </section>
 
-        <section if="about_me">
+        <section id="about_me" class="bg_gray">
             <h3>About me</h3>
+            <article>
+                <p>
+                    Hi, I'm Denis – UX/UI designer from Minsk. 
+                    <br>
+                    I'm interested in design and everything connected with it. 
+                </p>
+                <p>
+                    I'm studying at courses "Web and mobile design 
+                    <br>
+                    interfaces" in IT-Academy. 
+                </p>
+                <p>
+                    Ready to implement excellent projects 
+                    <br>
+                    with wonderful people.
+                </p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h3>Skills</h3>
             <p>
-                Hi, I'm Denis – UX/UI designer from Minsk. 
+                I work in such programs as 
+            </p>
+            <div class="my_skills">
+                <div class="skill">
+                    <img src="./img/photoshop.png" alt="photoshop icon" caption="Adobe Photoshop logo">
+                    <p>Adobe <br>Phtotoshop</p>
+                    <div class="skills_mark">
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_empty"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="./img/illustrator.png" alt="illustrator icon" caption="Adobe Illsutrator logo">
+                    <p>Adobe <br>Illustrator</p>
+                    <div class="skills_mark">
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_empty"></div>
+                        <div class="star star_empty"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="./img/ae.png" alt="after effects icon" caption="Adobe After Effects logo">
+                    <p>Adobe <br>After Effects</p>
+                    <div class="skills_mark">
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_empty"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="./img/figma.png" alt="figma icon" caption="Figma logo">
+                    <p>Figma</p>
+                    <div class="skills_mark">
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_filled"></div>
+                        <div class="star star_empty"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="bg_gray">
+            <h3>Portfolio</h3>
+            <figure>
+                <img src="./img/fashion_store.jpg" alt="site screenshot" caption="Fashion Store Homepage">
+                <figcaption>
+                    <a href="">Online fashion store - Homepage</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/reebok_web.jpg" alt="site screenshot" caption="Reebok site concept">
+                <figcaption>
+                    <a href="">Reebok Store - Concept</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/braun_web.jpg" alt="site screenshot" caption="Braun site concept">
+                <figcaption>
+                    <a href="">Braun Landing Page - Concept</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="contacts">
+            <h3>Contacts</h3>
+            <p>
+                Want to know more or just chat? 
                 <br>
-                I'm interested in design and everything connected with it. 
+                You are welcome!
+            </p>
+            <button><span>Send message</span></button>
+            <div class="social__buttons">
+                <a href="https://www.instagram.com/"><img src="./img/linkedin.png"></a>
+                <a href="https://www.linkedin.com/"><img src="./img/instagram.png"></a>
+                <a href="https://www.behance.net/"><img src="./img/behance.png"></a>
+                <a href="https://dribbble.com/"><img src="./img/dribbble.png"></a>
+            </div>
+            <p class="contact__likes">
+                Like me on 
                 <br>
-                I'm studying at courses "Web and mobile design 
-                <br>
-                interfaces" in IT-Academy. 
-                <br>
-                Ready to implement excellent projects 
-                <br>with wonderful people.
+                <a href="https://www.linkedin.com/">LinkedIn</a>, 
+                <a href="https://www.instagram.com/">Instagram</a>, 
+                <a href="https://www.behance.net/">Behance</a>, 
+                <a href="https://dribbble.com/">Dribbble</a>
             </p>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
 </body>
 </html>
