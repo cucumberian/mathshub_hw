@@ -97,8 +97,15 @@ function sendForm(event) {
 
     const formData = new FormData(form);
     // console.log(formData, form);
-    request.send(formData);
- 
+    // request.send(formData);
+
+    request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    const object = {
+        'user_question': input_string,
+    }
+    
+    request.send(JSON.stringify(object));
+
     request.addEventListener('load', process_response);
     text_area.innerText = `Пишу Денису. Пожалуйста подождите.`
 }
@@ -114,7 +121,7 @@ function process_response(event) {
     // console.log(event);
     // console.log(event.response);
     let denis_text = "";
-    if (event.currentTarget.status === 200) {
+    if (event.currentTarget.status === 200 && event.currentTarget.response) {
         const data = JSON.parse(event.currentTarget.response);
         denis_text = data["answer"]
     }
