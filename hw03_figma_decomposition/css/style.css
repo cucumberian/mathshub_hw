@@ -330,7 +330,7 @@ p.contact__likes {
     flex-direction: column;
 }
 
-#modal .input {
+#modal form {
     height: 40px;
     display: flex;
     flex-direction: row;
@@ -341,6 +341,7 @@ p.contact__likes {
     border: 0px;
     background: hsla(0, 0%, 47%, 0.157);
     /* width: 400px; */
+    font-size: 18px;
     width: 100%;
     margin: 0 auto;
 }
@@ -363,10 +364,21 @@ p.contact__likes {
     color: white;
 }
 
-#modal select {
+#modal form {
     width: 450px;
+    /* overflow-y: auto; */
 }
 
+#modal textarea {
+    width: 438px;
+    background-color: white;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid hsla(0, 0%, 8%, 0.734);
+    height: 200px;
+    resize: none;
+    font-size: 18px;
+}
 
 .hidden {
     display: none;

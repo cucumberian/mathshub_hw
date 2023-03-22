@@ -166,11 +166,11 @@
         <div class="modal_bg hidden">
             <div id="modal">
                 <div class="modal__close">x</div>
-                <div class="input">
-                    <input type="text" name="message" placeholder="ваше сообщение">
-                    <button>send</button>
-                </div>
-                <select size="10"></select>
+                <form action="#">
+                    <input type="text" name="user_question" placeholder="ваше сообщение">
+                    <button type="submit">send</button>
+                </form>
+                <textarea wrap="hard" rows="4" cols="10" class="response" readonly="true"></textarea>
             </div>
         </div>
     </main>
