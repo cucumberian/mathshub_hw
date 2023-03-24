@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/face-monkey_256.png" type="image/x-icon">
     <title>Denis Novik</title>
-
 </head>
 
 <body>
@@ -40,7 +39,11 @@
                 </div>
             </div>
             <!-- <div> -->
-            <img src="./img/BSPP2266.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
+            <picture>
+                <source srcset="./img/avatar_portrait.jpg" media="(max-width: 400px)">
+                <img src="./img/avatar_landscape.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
+            </picture>
+            
             <!-- </div> -->
         </section>
 
@@ -71,7 +74,7 @@
                 I work in such programs as 
             </p>
             <div class="my_skills">
-                <div class="skill">
+                <!-- <div class="skill">
                     <img src="./img/photoshop.png" alt="photoshop icon" caption="Adobe Photoshop logo">
                     <p>Adobe <br>Phtotoshop</p>
                     <div class="skills_mark">
@@ -81,59 +84,44 @@
                         <div class="star star_filled"></div>
                         <div class="star star_empty"></div>
                     </div>
-                </div>
-                <div class="skill">
-                    <img src="./img/illustrator.png" alt="illustrator icon" caption="Adobe Illsutrator logo">
-                    <p>Adobe <br>Illustrator</p>
-                    <div class="skills_mark">
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_empty"></div>
-                        <div class="star star_empty"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img src="./img/ae.png" alt="after effects icon" caption="Adobe After Effects logo">
-                    <p>Adobe <br>After Effects</p>
-                    <div class="skills_mark">
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_empty"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <img src="./img/figma.png" alt="figma icon" caption="Figma logo">
-                    <p>Figma</p>
-                    <div class="skills_mark">
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_empty"></div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
+        <!-- PortFolio -->
         <section id="portfolio" class="bg_gray">
             <h3>Portfolio</h3>
             <figure>
-                <img src="./img/fashion_store.jpg" alt="site screenshot" caption="Fashion Store Homepage">
+                <picture>
+                    <source srcset="./img/fashion_store_mobile.jpg" media="(max-width: 400px)">
+                    <source srcset="./img/fashion_store_600.jpeg" media="(max-width: 600px)">
+                    <img src="./img/fashion_store.jpg" alt="fashion site screenshot" caption="Fashion Store Homepage">
+                </picture>
+
                 <figcaption>
                     <a href="">Online fashion store - Homepage</a>
                 </figcaption>
             </figure>
+
             <figure>
-                <img src="./img/reebok_web.jpg" alt="site screenshot" caption="Reebok site concept">
+                <picture>
+                    <source srcset="./img/reebok_web_mobile.jpg" media="(max-width: 400px)">
+                    <source srcset="./img/reebok_web_600.jpeg" media="(max-width: 600px)">
+                    <img src="./img/reebok_web.jpg" alt="rebbok concept site screenshot" caption="Reebok site concept">
+                </picture>
+
                 <figcaption>
                     <a href="">Reebok Store - Concept</a>
                 </figcaption>
             </figure>
+
             <figure>
-                <img src="./img/braun_web.jpg" alt="site screenshot" caption="Braun site concept">
+                <picture>
+                    <source srcset="./img/braun_web_mobile.jpg" media="(max-width: 400px)">
+                    <source srcset="./img/braun_web_600.jpeg" media="(max-width: 600px)">
+                    <img src="./img/braun_web.jpg" alt="braun concept site screenshot" caption="Braun site concept">
+                </picture>
+
                 <figcaption>
                     <a href="">Braun Landing Page - Concept</a>
                 </figcaption>
@@ -147,13 +135,16 @@
                 <br>
                 You are welcome!
             </p>
+
             <button><span>Send message</span></button>
+
             <div class="social__buttons">
                 <a href="https://www.instagram.com/"><img src="./img/linkedin.png"></a>
                 <a href="https://www.linkedin.com/"><img src="./img/instagram.png"></a>
                 <a href="https://www.behance.net/"><img src="./img/behance.png"></a>
                 <a href="https://dribbble.com/"><img src="./img/dribbble.png"></a>
             </div>
+
             <p class="contact__likes">
                 Like me on 
                 <br>

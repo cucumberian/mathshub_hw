@@ -87,6 +87,8 @@ h3 {
 #first_section {
     max-width: 940px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 #about_div {
@@ -99,13 +101,13 @@ h3 {
     justify-content: space-between;
     align-items: flex-end;
 }
+
 #about_div div p {
     margin: 0;
     padding: 0;
     display: flex;
     padding-right: 50px;
 }
-
 
 
 .lang_buttons {
@@ -138,8 +140,9 @@ a.active_lang{
     /* padding: 9px 0; */
 }
 
-#first_section img {
-    /* transform: translate(0px, 1px); */
+
+#first_section picture {
+    margin-bottom: 104px;
 }
 
 /* about me */
@@ -171,7 +174,7 @@ a.active_lang{
 /* my skills*/
 #skills {
     height: 428px;
-    width: 944px;
+    max-width: 944px;
     margin: 0px auto;
     padding: 91px 0;
     display: flex;
@@ -184,6 +187,7 @@ a.active_lang{
 }
 
 div.my_skills {
+
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -224,25 +228,34 @@ div.star {
     flex-direction: row;
 }
 .star_filled {
-    background-image: url("../img/star_filled.jpg");
+    background-image: url("../img/star_filled.png");
 }
 .star_empty {
-    background-image: url("../img/star_empty.jpg")
+    background-image: url("../img/star_empty.png")
 }
 
 /* portfolio */
 #portfolio {
-    height: 2253px;
-    padding: 96px 0;
-    height: 2061px;
+    /* height: 2253px; */
+    /* padding: 96px 0; */
+    /* height: 2061px; */
     margin: 0px;
     justify-content: space-between;
 }
 
+#portfolio h3 {
+    margin-top: 112px;
+    margin-bottom: 45px;
+}
+#portfolio figure {
+    margin-top: 0;
+    margin-bottom: 100px;
+}
 figure figcaption {
     font-size: 18px;
     margin-top: 44px;
     text-align: center;
+    
 }
 
 figcaption a {

@@ -5,8 +5,74 @@ console.log("start script");
 // можно прокликивать элементы с навыкам и будет изменяться количество звезд
 // можно нажимать на звезды напрямую
 
-let stars = [4, 3, 4, 4];
 
+
+const skills_data = [
+    {
+        "img_src" : "./img/photoshop.png",
+        "img_alt": "photoshop icon",
+        "img_caption": "Adobe Photoshop logo",
+        "p_html": "Adobe <br>Phtotoshop",
+        "skill_level": 4
+    },
+    {
+        "img_src" : "./img/illustrator.png",
+        "img_alt": "illustrator icon",
+        "img_caption": "Adobe Illsutrator logo",
+        "p_html": "Adobe <br>Illustrator",
+        "skill_level": 3
+    },
+    {
+        "img_src" : "./img/ae.png",
+        "img_alt": "after effects icon",
+        "img_caption": "Adobe After Effects logo",
+        "p_html": "Adobe <br>After Effects",
+        "skill_level": 4
+    },
+    {
+        "img_src" : "./img/figma.png",
+        "img_alt": "figma icon",
+        "img_caption": "Figma logo",
+        "p_html": "Figma",
+        "skill_level": 4
+    },
+];
+
+let stars = [];
+
+function render_skills(data) {
+    const parent = document.querySelector(`div.my_skills`);
+    data.forEach((skill_data) => {
+        const skill = document.createElement('div');
+        skill.classList.add('skill');
+        skill.innerHTML = `
+        <img src="${skill_data["img_src"]}" alt="${skill_data["img_alt"]}" caption="${skill_data["img_caption"]}">
+        <p>${skill_data["p_html"]}</p>
+        `;
+        add_stars(5, skill_data["skill_level"], skill);
+        parent.append(skill);
+    });
+}
+
+function add_stars(max_stars, count, parent) {
+    // рисует несколько звездочек навыков
+    const skills_mark = document.createElement('div');
+    skills_mark.classList.add('skills_mark');
+    for (let i = 0; i < max_stars; i++) {
+        const skill_star = document.createElement('div');
+        skill_star.classList.add("star");
+        if (i < count) {
+            skill_star.classList.add("star_filled");
+        }
+        else {
+            skill_star.classList.add('star_empty');
+        }
+        skills_mark.append(skill_star);
+    }
+    parent.append(skills_mark);
+}
+
+render_skills(skills_data);
 const skills = document.querySelectorAll('div.skill');
 
 function renew_skills(list) {
@@ -18,7 +84,7 @@ function renew_skills(list) {
         
         stars.forEach((star, ind) => {
             star.classList = "star";
-            if (ind < list[index]) {
+            if (ind < list[index]["skill_level"]) {
                 star.classList.add("star_filled");
             }
             else {
@@ -42,7 +108,7 @@ function printCurrentStars(event) {
     }
 }
 
-renew_skills(stars);
+//renew_skills(skills_data);
 
 
 
