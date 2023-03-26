@@ -1,7 +1,54 @@
+// Написать динамический рендер меню    
+//
+
 'use strict';
 
 
 console.log("start script");
+
+// объект для меню навигации в хэдере
+const header_nav_data = [
+    {url: "#", content: "Home"},
+    {url: "#about_me", content: "About me"},
+    {url: "#skills", content: "Skills"},
+    {url: "#portfolio", content: "Portfolio"},
+    {url: "#contacts", content: "Contacts"},
+];
+
+class NavItem {
+    constructor(url, content, parent) {
+        this.url = url;
+        this.content = content;
+        this.parent = parent;
+    }
+
+    render() {
+        const element = document.createElement('a');
+        element.href = this.url;
+        element.innerHTML = this.content;
+        this.parent.appendChild(element);
+    }
+}
+
+class NavMenu {
+    constructor(data, parent) {
+        this.data = data;
+        this.parent = parent;
+    }
+    render() {
+        const nav = document.createElement(`nav`);
+        this.data.forEach(item => {
+            const link = new NavItem(item['url'], item['content'], nav);
+            link.render();
+        });
+        this.parent.appendChild(nav);
+    }
+}
+
+
+const nav_menu = new NavMenu(header_nav_data, document.querySelector("body header"));
+nav_menu.render();
+
 
 // объект с данными для создания скилов
 const skills_data = [
@@ -106,6 +153,8 @@ skills_data.forEach((data) => {
     );
     skill.render();
 });
+
+
 
 // надо переписать функцию клика по скилам через объекты
 
