@@ -232,9 +232,10 @@ document.addEventListener('keydown', (event) => {
 const server_url = "http://188.225.34.229:22841/denis_chat/"
 const form_send_button = document.querySelector(`form button[type="submit"]`);
 form_send_button.addEventListener('click', sendForm);
+
 function sendForm(event) {
-    form_send_button.removeEventListener('click', sendForm);
-    form_send_button.addEventListener('click', prevent);
+    form_send_button.removeEventListener('click', sendForm);  // отключаем клик по кнопке
+    form_send_button.addEventListener('click', prevent); // отключаем поведение кнопки отправки
 
     event.preventDefault();
     event.stopPropagation();
@@ -244,43 +245,47 @@ function sendForm(event) {
     if (input_string.length === 0)
         return;
     
-    const request = new XMLHttpRequest();
-    request.open("POST", server_url);
-
-    const formData = new FormData(form);
-    // console.log(formData, form);
-    // request.send(formData);
-
-    request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    // const formData = new FormData(form);
+    
     const object = {
         'user_question': input_string,
     }
     
-    request.send(JSON.stringify(object));
+    // fetch API
+    text_area.innerText = `Пишу Денису. Пожалуйста подождите.`;
+    fetch(server_url, {
+        'method': 'POST',
+        'headers': {
+            'Content-type': 'application/json; charset=utf-8',
+        },
+        'body': JSON.stringify(object),
+    })
+    .catch(error => {
+        console.error(`Error: `, error)
+    })
+    .then(request => {
+        text_area.innerText = `Получен ответ. Расшифровываю.`;
+        return request.json();
+    })
+    .catch(error => {
+        const ans = `Ошибка: не удалось расшифровать ответ от Дениса.`;
+        text_area.innerText = ans;
+        console.log(error);
+    })
+    .then(json => {
+        const ans = `${json['answer']}`;
+        console.log(`Denis Novik: "${ans}"`);
+        text_area.innerText = ans;
+    })
+    .finally(() => {
+        // размораживаем кнопку формы
+        form_send_button.addEventListener('click', sendForm);
+        form_send_button.removeEventListener('click', prevent);
+    });
 
-    request.addEventListener('load', process_response);
-    text_area.innerText = `Пишу Денису. Пожалуйста подождите.`
 }
 
 function prevent(event) {
     event.preventDefault();
     event.stopPropagation();
-}
-
-function process_response(event) {
-    form_send_button.addEventListener('click', sendForm);
-    form_send_button.removeEventListener('click', prevent);
-    // console.log(event);
-    // console.log(event.response);
-    let denis_text = "";
-    if (event.currentTarget.status === 200 && event.currentTarget.response) {
-        const data = JSON.parse(event.currentTarget.response);
-        denis_text = data["answer"]
-    }
-    else {
-        denis_text = "Ой, что-то пошло не так и я не могу вам ответить."
-    }
-    console.log(`Denis Novik: ${denis_text}`);
-
-    text_area.innerText = `${denis_text}`
 }
