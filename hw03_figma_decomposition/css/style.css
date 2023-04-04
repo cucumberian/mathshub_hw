@@ -2,12 +2,10 @@
     font-family: gilroy-bold;
     src: url("../font/Gilroy-Bold.ttf");
 }
-
 @font-face {
     font-family: gilroy-regular;
     src: url("../font/Gilroy-Regular.ttf");
 }
-
 @font-face {
     font-family: gilroy-medium;
     src: url("../font/Gilroy-Medium.ttf");
@@ -18,7 +16,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -28,34 +25,22 @@ body {
     margin: 0 auto;
     font-family: gilroy-medium;
 }
-
 body > * {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 p {
     font-size: 18px;
     line-height: 22px;
 }
-
 a {
     text-decoration: none;
     color:#828282;
 }
-
 a:active, a:hover{
     color: black;
-}
-
-div.max-width {
-    max-width: 940px;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -89,7 +74,6 @@ nav a {
 .bg_gray {
     background: #F6F6F6;
 }
-
 section {
     display: flex;
     justify-content: center;
@@ -97,7 +81,6 @@ section {
     flex-direction: column;
     overflow: hidden;
 }
-
 h1 {
     font-size: 47px;
     position: relative;
@@ -106,7 +89,6 @@ h1 {
     margin: 0;
     margin-right: 20px;
 }
-
 h3 {
     font-family: gilroy-medium;
     font-size: 34px;
@@ -296,7 +278,7 @@ figcaption a {
 .contacts_section {
     min-height: 622px;
     height: fit-content;
-    padding: 98px 0;
+    padding: 98px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,7 +290,6 @@ figcaption a {
 .contacts_section h3 {
     margin-bottom: 20px;
 }
-
 .contacts_section button {
     color: white;
     background-color: black;
@@ -317,10 +298,13 @@ figcaption a {
     border: 0px;
     border-radius: 21px;
     text-align: center;
-    display: inline;
+    font-size: 18px;
+    font-family: gilroy-bold;
     margin-top: 30px;
 }
-
+button:hover {
+    cursor: pointer;
+}
 p.contact__likes {
     font-size: 14px;
     color:#828282;
@@ -333,23 +317,6 @@ p.contact__likes {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-button {
-    text-align: center;
-    font-size: 18px;
-    font-family: gilroy-bold;
-    display: flex;
-    align-items: center;
-}
-button:hover {
-    cursor: pointer;
-}
-button > span {
-    box-sizing:border-box;
-    transform: translate(0px, 2px);
-    margin: 0 auto;
-}
-
 p.contact__likes {
     margin-top: 45px;
 }
@@ -366,7 +333,6 @@ p.contact__likes {
     display: flex;
     align-items: center;
 }
-
 .modal {
     position: absolute;
     top: 20%;
@@ -381,7 +347,6 @@ p.contact__likes {
     align-items: center;
     flex-direction: column;
 }
-
 .modal form {
     height: 40px;
     display: flex;
@@ -390,7 +355,6 @@ p.contact__likes {
     /* width: 450px; */
     width: 100%;
 }
-
 .modal .modal__close {
     position: absolute;
     top: 0px;
@@ -402,7 +366,6 @@ p.contact__likes {
     background: hsla(0, 0%, 0%, 0.58);
     color: white;
 }
-
 .modal input {
     border: 0px;
     background: hsla(0, 0%, 47%, 0.157);
@@ -431,7 +394,6 @@ p.contact__likes {
     font-size: 18px;
     outline: none;
 }
-
 .hidden {
     display: none;
 }
