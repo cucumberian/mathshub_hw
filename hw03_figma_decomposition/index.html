@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denis Novik's personal webpage">
+    <meta name="keywords" content="landing, denis novik, design, freelancer, web, figma, site construction">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/face-monkey_256.png" type="image/x-icon">
+    
     <title>Denis Novik</title>
 </head>
 
 <body>
     <header>
-        <!-- <nav>
-            buld dynamically
-        </nav> -->
+        <!-- 
+        
+            build dynamically in javascript
+        
+        -->
     </header>
-    <!-- <hr> -->
+    
     <main>
-        <section id="first_section">
+        <section class="first_section">
             <div id="about_div">
-                <div>
-                    <h1>Denis<br> Novik</h1>
-                </div>
-                <div>
-                    <p>
-                        UX | UI designer
-                        <br>
-                        24 years old, Minsk
-                    </p>
-                </div>
+                <h1>Denis<br> Novik</h1>
+
+                <p class="ui-designer">
+                    UX | UI designer
+                    <br>
+                    24 years old, Minsk
+                </p>
+                
                 <div class="lang_buttons">
                     <a href="#">RU</a>
                     <a href="#" class="active_lang">ENG</a>
                 </div>
             </div>
-            <!-- <div> -->
+
             <picture>
                 <source srcset="./img/avatar_portrait.jpg" media="(max-width: 400px)">
                 <img src="./img/avatar_landscape.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
             </picture>
-            
-            <!-- </div> -->
         </section>
 
-        <section id="about_me" class="bg_gray">
+        
+        <section id="about_me" class="about_me bg_gray">
             <h3>About me</h3>
             <article>
                 <p>
@@ -64,28 +67,19 @@
             </article>
         </section>
 
-        <section id="skills">
+        
+        <section id="skills" class="skills_section">
             <h3>Skills</h3>
             <p>
                 I work in such programs as 
             </p>
             <div class="my_skills">
-                <!-- <div class="skill">
-                    <img src="./img/photoshop.png" alt="photoshop icon" caption="Adobe Photoshop logo">
-                    <p>Adobe <br>Phtotoshop</p>
-                    <div class="skills_mark">
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_filled"></div>
-                        <div class="star star_empty"></div>
-                    </div>
-                </div> -->
+                <!--dynamically created with js -->
             </div>
         </section>
 
-        <!-- PortFolio -->
-        <section id="portfolio" class="bg_gray">
+
+        <section id="portfolio" class="portfolio_section bg_gray">
             <h3>Portfolio</h3>
             <figure>
                 <picture>
@@ -123,8 +117,9 @@
                 </figcaption>
             </figure>
         </section>
-
-        <section id="contacts">
+        
+        
+        <footer id="contacts" class="contacts_section">
             <h3>Contacts</h3>
             <p>
                 Want to know more or just chat? 
@@ -132,7 +127,7 @@
                 You are welcome!
             </p>
 
-            <button><span>Send message</span></button>
+            <button>Send message</button>
 
             <div class="social__buttons">
                 <a href="https://www.instagram.com/"><img src="./img/linkedin.png"></a>
@@ -149,19 +144,20 @@
                 <a href="https://www.behance.net/">Behance</a>, 
                 <a href="https://dribbble.com/">Dribbble</a>
             </p>
-        </section>
+        </footer>
 
-        <div class="modal_bg hidden">
-            <div id="modal">
-                <div class="modal__close">x</div>
-                <form action="#">
-                    <input type="text" name="user_question" placeholder="ваше сообщение">
-                    <button type="submit">send</button>
-                </form>
-                <textarea wrap="hard" rows="4" cols="10" class="response" readonly="true"></textarea>
-            </div>
-        </div>
     </main>
+
+    <div class="modal_bg hidden">
+        <div id="modal" class="modal">
+            <div class="modal__close">x</div>
+            <form action="#">
+                <input type="text" name="user_question" placeholder="ваше сообщение">
+                <button type="submit">send</button>
+            </form>
+            <textarea wrap="hard" rows="4" cols="10" class="response" readonly="true"></textarea>
+        </div>
+    </div>
 
 </body>
 </html>

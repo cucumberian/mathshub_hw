@@ -84,6 +84,20 @@ const skills_data = [
 
 
 
+
+// <div class="skill">
+// <img src="./img/photoshop.png" alt="photoshop icon" caption="Adobe Photoshop logo">
+// <p>Adobe <br>Phtotoshop</p>
+// <div class="skills_mark">
+//     <div class="star star_filled"></div>
+//     <div class="star star_filled"></div>
+//     <div class="star star_filled"></div>
+//     <div class="star star_filled"></div>
+//     <div class="star star_empty"></div>
+// </div>
+// </div>
+
+
 class Skill {
     self_class = `skill`;
     skills_mark_class = `skills_mark`;
@@ -200,9 +214,9 @@ skills_data.forEach((data) => {
 
 // по нажатии на кнопку отправки сообщения открывается модально окно с формой обратной связи
 const modal = document.querySelector(`div.modal_bg`);
-const modal_close = document.querySelector(`#modal .modal__close`);
-const send_button = document.querySelector(`#contacts button`);
-const text_area = document.querySelector(`#modal textarea`);
+const modal_close = document.querySelector(`.modal .modal__close`);
+const send_button = document.querySelector(`.contacts_section button`);
+const text_area = document.querySelector(`.modal textarea`);
 
 
 send_button.addEventListener('click', (e) => {

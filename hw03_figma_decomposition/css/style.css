@@ -13,13 +13,32 @@
     src: url("../font/Gilroy-Medium.ttf");
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
     margin: 0 auto;
     font-family: gilroy-medium;
 }
-body p {
+
+body > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
     font-size: 18px;
+    line-height: 22px;
 }
 
 a {
@@ -31,19 +50,32 @@ a:active, a:hover{
     color: black;
 }
 
+div.max-width {
+    max-width: 940px;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* header */
 header {
-    max-width: 940px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
+    max-width: 940px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     height: 88px;
     border-bottom: 1px solid #828282;
+    flex-wrap: wrap;
 }
 nav a {
     font-family: gilroy-bold;
@@ -54,7 +86,6 @@ nav a {
 
 
 /* main */
-
 .bg_gray {
     background: #F6F6F6;
 }
@@ -64,6 +95,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 h1 {
@@ -72,6 +104,7 @@ h1 {
     bottom: -10px;
     padding: 0;
     margin: 0;
+    margin-right: 20px;
 }
 
 h3 {
@@ -84,38 +117,42 @@ h3 {
 
 
 /* first_section */
-#first_section {
+.first_section {
     max-width: 940px;
+    width: 100%;
+    height: 680px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: flex-start;
 
-#about_div {
+}
+.first_section > div {
     width: 100%;
-    height: 138px;
+    height: 186px;
     margin: 0;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
-
-#about_div div p {
+.first_section picture {
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    display: contents;
+}
+.ui-designer {
     margin: 0;
     padding: 0;
     display: flex;
-    padding-right: 50px;
+    margin-right: 50px;
 }
-
-
 .lang_buttons {
     display: flex;
     flex-direction: column-reverse;
     transform: translate(0, 10px);
 }
-
 .lang_buttons a {
     font-family: gilroy-bold;
     border: none;
@@ -126,8 +163,6 @@ h3 {
     transform: rotate(180deg);
     direction: rtl;
 }
-
-
 a.active_lang{
     color: black;
     border-top: 2px solid black;
@@ -141,53 +176,42 @@ a.active_lang{
 }
 
 
-#first_section picture {
-    margin-bottom: 104px;
-}
-
 /* about me */
-#about_me {
-    height: 506px;
+.about_me {
+    min-height: 506px;
     justify-content: space-between;
-    padding: 107px 0;
-    height: 292px;
+    padding: 110px 0;
 }
-
-#about_me h3 {
+.about_me h3 {
     position: relative;
     top: 0px;
 }
-
-#about_me p {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-#about_me article {
+.about_me article {
     height: 218px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.about_me p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
 
 
 /* my skills*/
-#skills {
-    min-height: 428px;
-    height: fit-content;
-    max-width: 944px;
+section.skills_section {
+    min-height: 610px;
+    max-width: 940px;
+    width: 100%;
     margin: 0px auto;
-    padding: 91px 0;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
-
-#skills h3 {
-    margin: 0px;
-    padding: 0px;
+.skills_section > p {
+    text-align: center;
 }
-
 div.my_skills {
     width: 100%;
     display: flex;
@@ -200,7 +224,6 @@ div.my_skills {
         justify-content: center;
     }
 }
-
 div.skill {
     width: 166px;
     height: 206px;
@@ -217,11 +240,9 @@ div.skill {
     margin: auto 0px;
     padding: 0 10px;
 }
-
-.skill img {
-    /* width: 100%; */
-}
-
+/* .skill img {
+    width: 100%;
+} */
 div.skills_mark {
     width: inherit;
     display: flex;
@@ -242,20 +263,20 @@ div.star {
     background-image: url("../img/star_empty.png")
 }
 
+
 /* portfolio */
-#portfolio {
+.portfolio_section {
     /* height: 2253px; */
     /* padding: 96px 0; */
     /* height: 2061px; */
     margin: 0px;
     justify-content: space-between;
 }
-
-#portfolio h3 {
+.portfolio_section h3 {
     margin-top: 112px;
     margin-bottom: 45px;
 }
-#portfolio figure {
+.portfolio_section figure {
     margin-top: 0;
     margin-bottom: 100px;
 }
@@ -263,9 +284,7 @@ figure figcaption {
     font-size: 18px;
     margin-top: 44px;
     text-align: center;
-    
 }
-
 figcaption a {
     color: black;
     text-decoration: underline;
@@ -274,24 +293,32 @@ figcaption a {
 
 /* contacts */
 
-#contacts {
-    height: 622px;
+.contacts_section {
+    min-height: 622px;
+    height: fit-content;
     padding: 98px 0;
-    height: 426px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
+.contacts_section > * {
+    text-align: center;
+}
+.contacts_section h3 {
+    margin-bottom: 20px;
+}
 
-#contacts button {
+.contacts_section button {
     color: white;
     background-color: black;
     width: 180px;
     height: 42px;
     border: 0px;
     border-radius: 21px;
-}
-#contacts p {
-    padding: 0;
     text-align: center;
+    display: inline;
+    margin-top: 30px;
 }
 
 p.contact__likes {
@@ -300,9 +327,11 @@ p.contact__likes {
 }
 .social__buttons {
     margin-top: 85px;
-    width: 342px;
+    max-width: 342px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 button {
@@ -336,7 +365,7 @@ p.contact__likes {
     z-index: 1050;
 }
 
-#modal {
+.modal {
     position: relative;
     top: 20%;
     margin: 0 auto;
@@ -351,14 +380,14 @@ p.contact__likes {
     flex-direction: column;
 }
 
-#modal form {
+.modal form {
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-items: center;
     width: 450px;
 }
-#modal input {
+.modal input {
     border: 0px;
     background: hsla(0, 0%, 47%, 0.157);
     /* width: 400px; */
@@ -366,14 +395,14 @@ p.contact__likes {
     width: 100%;
     margin: 0 auto;
 }
-#modal button {
+.modal button {
     border: 0;
     padding: 0 20px;
     background-color: #000000b3;
     color: white;
 }
 
-#modal .modal__close {
+.modal .modal__close {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -385,12 +414,12 @@ p.contact__likes {
     color: white;
 }
 
-#modal form {
+.modal form {
     width: 450px;
     /* overflow-y: auto; */
 }
 
-#modal textarea {
+.modal textarea {
     width: 438px;
     background-color: white;
     padding: 5px;
