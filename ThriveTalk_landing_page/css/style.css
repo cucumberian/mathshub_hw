@@ -1,0 +1,651 @@
+@font-face {
+    font-family: Larsseit;
+    src: url("../font/Larsseit.ttf");
+}
+@font-face {
+    font-family: Larsseit Bold;
+    src: url("../font/Larsseit-Bold.ttf");
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Larsseit;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Larsseit Bold;
+    font-size: 48px;
+    line-height: 53px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+
+    height: 167px;
+    margin-bottom: 20px;
+    color: #22356F;
+}
+
+p { 
+    display: flex;
+    flex-direction: column;
+    color: #22356F;
+}
+
+.thrivetalk {
+    color: #62D0DF;
+    font-family: Larsseit Bold;
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    text-align: left;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+header .thrivetalk {
+    padding-left: 30px;
+}
+
+header > nav > a {
+    font-family: Larsseit Bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+    color: #22356F;
+}
+
+header > nav > a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #22356F;
+}
+
+header button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #62D0DF;
+    color: white;
+    border: none;
+    font-family: Larsseit Bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+header button span {
+    position: relative;
+    top: 2px;
+    font-weight: bold;
+}
+
+.first_section {
+    height: 840px;
+    padding-bottom: 75px;
+    background-color: #F4F9E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first_section div .thrivetalk {
+    height: 64px;
+}
+.first_section > div {
+    padding-left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 524px;
+}
+
+.first_section > div > div {
+    margin-top: 63px;
+}
+.first_section_text {
+    color: #22356F;
+}
+
+.first_section > div button {
+    border: none;
+    height: 50px;
+    width: 150px;
+
+    font-family: Larsseit Bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;    
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.first_section_button_1 {
+    background-color: #F9B640;
+    color: white;
+    
+}
+.first_section_button_2 {
+    background: none;
+    margin-left: 30px;
+    color: #FAB63E;
+}
+
+
+.section_2 {
+    background-color: #62D0DF;
+    height: 604px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 180px;
+}
+
+.section_2 div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.section_2 h2 {
+    font-family: Larsseit Bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.006em;
+    padding-top: 80px;
+    /* margin-top: 150px; */
+    /* margin-bottom: 75px; */
+    /* text-align: left; */   
+}
+
+.section_2 div p {
+    max-width: 555px;
+    display: block;
+    font-family: Larsseit;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.section_2 p span {
+   font-family: Larsseit;
+font-size: 20px;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+/*
+
+/* 
+font-family: Larsseit;
+font-size: 16px;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+display: inline; */
+
+}
+
+.section_2 picture {
+    margin-left: 20px;
+}
+
+.section_3 {
+    padding-left: 106px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 370px;
+}
+
+.section_3 h3 {
+    margin-right: 225px;
+    font-family: 'Larsseit';
+    font-weight: normal;
+    font-family: Larsseit;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #22356F;
+}
+
+.section_3 p span{
+    font-family: Larsseit Bold;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    
+}
+
+
+.section_4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 120px;
+}
+
+.section_4 h3 {
+    margin: 24px auto;
+    font-family: Larsseit;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsla(225, 53%, 28%, 0.5);
+}
+
+.section_4_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.section_4_grid > div:first-child {
+    background-color: #FFE2DE;
+}
+div.section_4_grid > div:nth-child(2n) {
+    background-color: #C4E769;
+}
+div.section_4_grid > div:nth-child(3) {
+    background-color: #62D0DF;
+}
+div.section_4_grid > div:nth-child(4) {
+    background-color: #0052C1;
+}
+
+.section_4_grid > div {
+    height: 360px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 52px;
+}
+
+.section_4_grid .div_container {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid hsla(0, 0%, 100%, 0.5);
+    padding-top: 23px;
+    display: grid;
+    grid-template-columns: 10% auto;
+    justify-items: start;
+    align-items: start;
+}
+
+.section_4 .span_dot {
+    content: ".";
+    color: #E9B730;
+    font-size: 3em;
+    padding: 5px;
+    position: relative;
+    top: -21px;
+    left: -5px;
+}
+
+.section_4 span {
+    font-family: Larsseit Bold;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: white;
+}
+
+.section_5 > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 480px);
+}
+
+.section_5 > div > div {
+    border: none;
+    padding: 70px;
+
+    display: grid;
+    grid-template-rows: 30px auto;
+    grid-template-columns: 10% auto;
+    grid-template-areas:
+    "header header"
+    "content content2";
+    align-items: start;
+    justify-items: left;
+}
+
+.section_5 > div > div:nth-child(1) {
+    background-color: #22356F;
+}
+
+.section_5 > div > div:nth-child(2) {
+    background-color: #0052C1;
+}
+
+.section_5 > div > div:nth-child(3) {
+    background-image: url("../img/joanna-kosinska-340748.jpg");
+}
+
+.section_5 > div > div:nth-child(4) {
+    background-color: #62D0DF;
+}
+
+.section_5 > div > div:nth-child(5) {
+    background-color: #DEE1FF;
+}
+
+.section_5 > div > div:nth-child(6) {
+    background-color: #8F00FF;
+}
+
+
+.section_5 hr {
+    grid-column: span 2;
+    grid-area: header;
+    width: 340px;
+    border: 0;
+    border-top: 3px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.section_5 span:nth-child(2) {
+    grid-area: content;
+
+    content: ".";
+    color: #E9B730;
+    font-size: 3em;
+    padding: 5px;
+    position: relative;
+    top: -21px;
+    left: -5px;
+}
+
+.section_5 span:nth-child(3){
+    grid-area: content2;
+
+    max-width: 60%;
+    color: white;
+    font-family: Larsseit Bold;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+    text-align: left;
+}
+
+
+.section_6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 240px);
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    align-items: start;
+}
+
+.section_6 h3 {
+    color: #22356F;
+    margin-top: 55px;
+
+    font-family: Larsseit;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.03em;
+    text-align: left;
+
+}
+
+.section_6 p {
+    margin-top: 28px;
+    max-width: 298px;
+    color: rgba(34, 53, 111, 0.5);
+    font-family: 'Larsseit';
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+}
+
+.section_7 {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 800px 800px 380px;
+    grid-template-areas: 
+    "man_picture you_should_also_know"
+    "ready_set_smile man_smile"
+    "woman_smile infos";
+}
+
+.section_7 .man_picture {
+    background-image: url("../img/linkedin-sales-navigator-402831.jpg");
+}
+.section_7 .you_should_also_know {
+    grid-column: span 2;
+
+    padding-left: 106px;
+    padding-top: 103px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.section_7 .you_should_also_know h2 {
+    font-family: Larsseit;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #22356F;
+    margin-bottom: 225px;
+    
+}
+
+.section_7 .you_should_also_know p {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    font-family: Larsseit;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+
+.section_7 .you_should_also_know button {
+    height: 43px;
+    margin-bottom: 42px;
+    background: none;
+    border: none;
+    font-family: Larsseit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FAB63E;
+
+}
+
+.section_7 .you_should_also_know p a {
+    text-decoration: none;
+    color: #6CD3E1;
+}
+
+.section_7 .you_should_also_know button {
+
+}
+
+.section_7 .man_smile {
+    background-image: url("../img/charles-etoroma-390119.jpg");
+}
+
+.section_7 .ready_set_smile {
+    grid-column: span 2;
+    background-color: #22356F;
+    color: white;
+
+    padding-left: 180px;
+    padding-top: 103px;
+}
+
+.section_7 .ready_set_smile h2 {
+    font-family: Larsseit;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+}
+
+.section_7 .ready_set_smile h3 {
+    margin-top: 230px;
+    font-family: Larsseit;
+    font-size: 64px;
+    line-height: 94px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+}
+
+.section_7 .ready_set_smile p {
+    max-width: 580px;
+    margin-top: 75px;
+    font-family: Larsseit;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+.woman_smile {
+    background-image: url("../img/autumn-goodman-242825.jpg");
+}
+
+.section_7 .infos {
+    
+    grid-column: span 2;
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: start;
+    justify-items: left;
+
+
+}
+.section_7 .infos > div {
+    margin-left: 60px;
+    margin-top: 98px;
+    max-width: 207px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section_7 .infos h3 {
+    height: 70px;
+    font-family: Larsseit;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    color: #22356F;    
+}
+
+
+
+.section_7 .ready_set_smile button {
+    height: 43px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #62D0DF;
+
+    font-family: Larsseit Bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+.infos .contacts {
+    margin-top: 2em;
+}
+
+.infos > div *{
+    /* margin-top: 2em; */
+    font-family: Larsseit;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: -0.006em;
+    text-align: left;
+
+    color: rgba(34, 53, 111, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #62D0DF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p, footer a {
+    margin-left: 185px;
+    margin-right: 185px;
+    color: white;
+    font-family: Larsseit Bold;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+    transform: translateY(5px);
+}
