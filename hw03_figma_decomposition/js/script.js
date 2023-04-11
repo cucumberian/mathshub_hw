@@ -49,7 +49,6 @@ class NavMenu {
 const nav_menu = new NavMenu(header_nav_data, document.querySelector("body header"));
 nav_menu.render();
 
-
 // объект с данными для создания скилов
 const skills_data = [
     {
@@ -81,22 +80,6 @@ const skills_data = [
         "skill_level": 4
     },
 ];
-
-
-
-
-// <div class="skill">
-// <img src="./img/photoshop.png" alt="photoshop icon" caption="Adobe Photoshop logo">
-// <p>Adobe <br>Phtotoshop</p>
-// <div class="skills_mark">
-//     <div class="star star_filled"></div>
-//     <div class="star star_filled"></div>
-//     <div class="star star_filled"></div>
-//     <div class="star star_filled"></div>
-//     <div class="star star_empty"></div>
-// </div>
-// </div>
-
 
 class Skill {
     self_class = `skill`;

@@ -1,165 +1,206 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Denis Novik's personal webpage">
-    <meta name="keywords" content="landing, denis novik, design, freelancer, web, figma, site construction">
-
+    <title>Denis Novik Landing Page</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/face-monkey_256.png" type="image/x-icon">
-    
-    <title>Denis Novik</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/about_me.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
-    <header>
-        <!-- 
-        
-            build dynamically in javascript
-        
-        -->
-    </header>
-    
-    <main>
-        <section class="first_section">
-            <div id="about_div">
-                <h1>Denis<br> Novik</h1>
 
-                <p class="ui-designer">
-                    UX | UI designer
-                    <br>
-                    24 years old, Minsk
-                </p>
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about_me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Potfolio</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+
+        <div id="home">
+            <div class="title_block">
+                <h1>Denis<br>Novik</h1>
+
+                <button class="menu"><img src="./img/menu.svg"></button>
                 
-                <div class="lang_buttons">
-                    <a href="#">RU</a>
-                    <a href="#" class="active_lang">ENG</a>
+                <p class="classic_text">UX | UI designer<br> 24 years old, Minsk</p>
+                
+                <div class="btns">
+                    <button><span>RU</span></button>
+                    <button class="active_lang"><span>ENG</span></button>
                 </div>
             </div>
 
-            <picture>
-                <source srcset="./img/avatar_portrait.jpg" media="(max-width: 400px)">
-                <img src="./img/avatar_landscape.jpg" alt="Denis Novak portrait" caption="Denis Novak portrait">
-            </picture>
-        </section>
+            <div class="avatar">
+                <picture>
+                    <source srcset="./img/portrait.jpg" media="(max-width: 500px)">
+                    <img src="./img/landscape.jpg" alt="Denis's avatar" title="Denis's avatar">
+                </picture>
+            </div>
+        </div>
+    </header>
 
-        
-        <section id="about_me" class="about_me bg_gray">
-            <h3>About me</h3>
-            <article>
-                <p>
-                    Hi, I'm Denis – UX/UI designer from Minsk. 
-                    <br>
-                    I'm interested in design and everything connected with it. 
-                </p>
-                <p>
-                    I'm studying at courses "Web and mobile design 
-                    <br>
-                    interfaces" in IT-Academy. 
-                </p>
-                <p>
-                    Ready to implement excellent projects 
-                    <br>
-                    with wonderful people.
-                </p>
-            </article>
-        </section>
+    <main>
+        <section class="about_me bg_gray" id="about_me">
+            <h3>About Me</h3>
 
-        
-        <section id="skills" class="skills_section">
-            <h3>Skills</h3>
             <p>
-                I work in such programs as 
+                <span>Hi, I'm Denis – UX/UI designer from Minsk.</span>
+                <span>I'm interested in design and everything connected with it.</span>
             </p>
-            <div class="my_skills">
-                <!--dynamically created with js -->
+
+            <p>
+                <span>I'm studying at courses "Web and mobile design</span>
+                <span>interfaces" in IT-Academy.</span>
+            </p>
+
+            <p>
+                <span>Ready to implement excellent projects</span>
+                <span>with wonderful people.</span>
+            </p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3>Skills</h3>
+            
+            <p>I work in such programs as</p>
+
+            <div class="skills-container">
+                <div>
+                    <img src="./img/ps.svg" alt="Adobe Photoshop" title="Adobe Photoshop">
+                    <p>Adobe <br>Photoshop</p>
+                    <div class="stars">
+                        <img src="./img/starBlack.svg" alt="star">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starGrey.svg" alt="..">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/ai.svg" alt="Adobe Illustrator" title="Adobe Illustrator">
+                    <p>Adobe <br>Illustrator</p>
+                    <div class="stars">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starGrey.svg" alt="..">
+                        <img src="./img/starGrey.svg" alt="..">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/ae.svg" alt="Adobe After Effects" title="Adobe After Effects">
+                    <p>Adobe <br>After Effects</p>
+                    <div class="stars">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starGrey.svg" alt="..">
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/figma.svg" alt="Figma" title="Figma">
+                    <p>Figma</p>
+                    <div class="stars">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starBlack.svg" alt="..">
+                        <img src="./img/starGrey.svg" alt="..">
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section id="portfolio" class="portfolio bg_gray">
 
-        <section id="portfolio" class="portfolio_section bg_gray">
-            <h3>Portfolio</h3>
-            <figure>
+            <h3>Potfolio</h3>
+            <article>
                 <picture>
                     <source srcset="./img/fashion_store_mobile.jpg" media="(max-width: 400px)">
                     <source srcset="./img/fashion_store_600.jpeg" media="(max-width: 600px)">
-                    <img src="./img/fashion_store.jpg" alt="fashion site screenshot" caption="Fashion Store Homepage">
+                    <img src="./img/fashion_store.jpg" alt="1">
                 </picture>
 
-                <figcaption>
-                    <a href="">Online fashion store - Homepage</a>
-                </figcaption>
-            </figure>
+                <a href="#" target="_blank">Online fashion store - Homepage</a>
+            </article>
 
-            <figure>
+            <article>
                 <picture>
                     <source srcset="./img/reebok_web_mobile.jpg" media="(max-width: 400px)">
                     <source srcset="./img/reebok_web_600.jpeg" media="(max-width: 600px)">
-                    <img src="./img/reebok_web.jpg" alt="rebbok concept site screenshot" caption="Reebok site concept">
+                    <img src="./img/reebok_web.jpg" alt="1">
                 </picture>
 
-                <figcaption>
-                    <a href="">Reebok Store - Concept</a>
-                </figcaption>
-            </figure>
+                <a href="#" target="_blank">Reebok Store - Concept</a>
+            </article>
 
-            <figure>
+            <article>
                 <picture>
                     <source srcset="./img/braun_web_mobile.jpg" media="(max-width: 400px)">
                     <source srcset="./img/braun_web_600.jpeg" media="(max-width: 600px)">
-                    <img src="./img/braun_web.jpg" alt="braun concept site screenshot" caption="Braun site concept">
+                    <img src="./img/braun_web.jpg" alt="1">
                 </picture>
 
-                <figcaption>
-                    <a href="">Braun Landing Page - Concept</a>
-                </figcaption>
-            </figure>
+                <a href="#" target="_blank">Braun Landing Page - Concept</a>
+            </article>
         </section>
-        
-        
-        <footer id="contacts" class="contacts_section">
-            <h3>Contacts</h3>
-            <p>
-                Want to know more or just chat? 
-                <br>
-                You are welcome!
-            </p>
-
-            <button>Send message</button>
-
-            <div class="social__buttons">
-                <a href="https://www.instagram.com/"><img src="./img/linkedin.png"></a>
-                <a href="https://www.linkedin.com/"><img src="./img/instagram.png"></a>
-                <a href="https://www.behance.net/"><img src="./img/behance.png"></a>
-                <a href="https://dribbble.com/"><img src="./img/dribbble.png"></a>
-            </div>
-
-            <p class="contact__likes">
-                Like me on 
-                <br>
-                <a href="https://www.linkedin.com/">LinkedIn</a>, 
-                <a href="https://www.instagram.com/">Instagram</a>, 
-                <a href="https://www.behance.net/">Behance</a>, 
-                <a href="https://dribbble.com/">Dribbble</a>
-            </p>
-        </footer>
-
     </main>
 
-    <div class="modal_bg hidden">
-        <div id="modal" class="modal">
-            <div class="modal__close">x</div>
-            <form action="#">
-                <input type="text" name="user_question" placeholder="ваше сообщение">
-                <button type="submit">send</button>
-            </form>
-            <textarea wrap="hard" rows="4" cols="10" class="response" readonly="true"></textarea>
+    <footer id="contacts">
+        <h3>Contacts</h3>
+
+        <p>Want to know more or just chat?<br>You are welcome!</p>
+
+        <a
+            href="Want to know more or just chat? You are welcome!https://wa.me/79995558844?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82...">
+            <button>
+                Send message
+            </button>
+        </a>
+
+        <div class="icons">
+            <a href="#">
+
+                <img src="./img/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="#">
+                <img src="./img/instagram.svg" alt="instagram">
+            </a>
+
+            <a href="#">
+                <img src="./img/behance.svg" alt="behance">
+            </a>
+
+            <a href="#">
+                <img src="./img/dribbble.svg" alt="dribbble">
+            </a>
         </div>
-    </div>
+
+        <div class="socials">
+            <span>Like me on</span>
+
+            <span>
+                <a href="#">LinkedIn</a>, 
+                <a href="#">Instagram</a>, 
+                <a href="#">Behance</a>, 
+                <a href="#">Dribbble</a>
+            </span>
+        </div>
+    </footer>
 
 </body>
-</html>
 
-<script defer type="text/javascript" src="./js/script.js"></script>
+</html>

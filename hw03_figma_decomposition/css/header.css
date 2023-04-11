@@ -1,0 +1,103 @@
+header {
+    max-width: 944px;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 88px;
+    border-bottom: 1px solid #828282;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-family: Gilroy-Bold;
+    color: #828282;
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 22px;
+}
+
+.title_block {
+    min-height: 188px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.title_block h1 {
+    font-size: 47px;
+    line-height: 59px;
+    color: #070707;
+    display: inline;
+    margin-right: 297px;
+}
+
+button.menu {
+    position: absolute;
+    right: 30px;
+    top: 68px;
+    float: right;
+    width: 33px;
+    height: 20px;
+    border: none;
+    background: none;
+    display: none;
+}
+
+.title_block p {
+    margin-top: 0;
+    display: inline-block;
+}
+
+.btns {
+    display: inline;
+    float: right;
+    transform: translate(17px, 5px) rotate(-90deg);
+}
+
+.btns button {
+    border: none;
+    background: none;
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.avatar {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 104px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .title_block{
+        padding-top: 65px;
+        padding-bottom: 37px;
+    }
+
+    .title_block p {
+        display: block;
+        margin-top: 23px;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    .avatar {
+        margin-bottom: 83px;
+    }
+    button.menu {
+        display: block;
+    }
+} 

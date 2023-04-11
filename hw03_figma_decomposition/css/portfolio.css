@@ -1,0 +1,23 @@
+.portfolio {
+    height: fit-content;
+}
+
+.portfolio h3 {
+    margin-top: 112px;
+    margin-bottom: 47px;
+}
+
+.portfolio article {
+    margin-bottom: 99px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio picture {
+    margin-bottom: 45px;
+}
+
+.portfolio picture img {
+    width: 100%;
+}

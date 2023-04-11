@@ -1,0 +1,49 @@
+/* about me */
+.about_me {
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about_me > h3 {
+    display: block;
+    margin-top: 120px;
+    margin-bottom: 18px;
+}
+
+.about_me > p {
+    margin-bottom: 2em;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.about_me > p:last-child {
+    margin-bottom: 107px;
+}
+
+.about_me > p > span {
+    display: block;
+}
+
+@media (max-width: 500px) {
+    .about_me h3 {
+        margin-top: 81px;
+        margin-bottom: 1em;
+    }
+
+    .about_me > p {
+        max-width: 300px;
+    }
+
+    .about_me > p:last-child {
+        margin-bottom: 76px;
+    }
+
+    .about_me > p > span {
+        display: inline;
+    }
+}

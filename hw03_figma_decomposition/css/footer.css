@@ -1,0 +1,86 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 622px;
+    height: fit-content;
+}
+
+footer > h3 {
+    margin-top: 114px;
+}
+
+footer > p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+footer > a {
+    margin-top: 30px;
+}
+
+footer > a > button {
+    background-color: #070707;
+    height: 42px;
+    width: 180px;
+    border-radius: 21px;
+    color: white;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+footer .icons {
+    margin-top: 86px;
+    margin-bottom: 45px;
+    width: 100%;
+    max-width: 342px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .socials {
+    margin-bottom: 123px;
+
+    color: #828282;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+}
+
+@media (max-width: 500px) {
+    footer > h3 {
+        margin-top: 82px;
+    }
+
+    footer > p {
+        margin-top: 27px;
+    }
+
+    footer > a {
+        margin-top: 39px;
+    }
+    footer .icons {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    footer .socials {
+        margin-bottom: 90px;
+    }
+}
