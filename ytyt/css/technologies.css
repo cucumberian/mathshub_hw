@@ -1,0 +1,107 @@
+.technologies {
+    background-color: white;
+    
+    width: 100%;
+    margin-top: 103px;
+    
+}
+.technologies h2 {
+    margin-bottom: 35px;
+}
+
+.technologies > div {
+    background-color: #EAF2F5;
+    border-radius: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+
+
+    margin: 0 auto;
+    max-width: 1160px;
+    max-height: 396px;
+    height: fit-content;
+}
+
+.technologies > div > img {
+    margin-top: 42px;
+}
+
+.tech_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-areas:
+    "python python nets"
+    "dbs flask_django"
+    "tests docker git"; */
+    gap: 10px 10px;
+    margin-right: 104px;
+    margin-bottom: 26px;
+}
+.tech_container > span {
+    color: white;
+    white-space: nowrap;
+    padding: 0px 16px;
+    border-radius: 22px;
+
+    height: 45px;
+    min-width: 45px;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    display: block;
+}
+
+.tech_python {
+    width: 311px;
+    grid-area: python;
+    background-color: #5096FF;
+}
+.tech_nets {
+    width: 89px;
+    grid-area: nets;
+    background-color: #FFB359;
+}
+.tech_dbs {
+    width: 151px;
+    grid-area: dbs;
+    background-color: #FF6F50;
+}
+.tech_flask_django {
+    width: 277px;
+    grid-area: flask_django;
+    background-color: #4BD071;
+}
+.tech_tests {
+    width: 258px;
+    grid-area: tests;
+    background-color: #50C0FF;
+}
+.tech_docker {
+    width: 95px;
+    grid-area: docker;
+    background-color: #4B77B9;
+}
+.tech_git {
+    width: 94px;
+    grid-area: git;
+    background-color: #AF93FF;
+}
+
+.technologies > div > div > p {
+    font-family: Gilroy SemiBold;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 87px;
+    width: 385px;
+}
+

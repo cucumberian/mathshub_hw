@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/gilroy-regular.ttf');
+}
+@font-face {
+    font-family: Gilroy SemiBold;
+    src: url('../fonts/gilroy-semibold.ttf');
+}
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url('../fonts/gilroy-medium.ttf');
+}
+@font-face {
+    font-family: Gilroy-MediumItalic;
+    src: url('../fonts/gilroy-mediumitalic.ttf');
+}
+@font-face {
+    font-family: Gilroy Bold;
+    src: url('../fonts/gilroy-bold.ttf');
+}
+@font-face {
+    font-family: Manrope;
+    src: url('../fonts/Manrope-VariableFont_wght.ttf');
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body {
+    font-size: 16px;
+    width: 100vw;
+    color: #22253B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+a {
+    color: #22253B;
+}
+a:hover {
+    color: #F15525;
+}
+
+main {
+    width: 100%;
+}
+main > section {
+    padding: 0 0px;
+}
+
+h2 {
+    font-family: Gilroy SemiBold;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+body > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white_bg {
+    background-color: white;
+    border-radius: 70px;
+    width: 100%;
+}
+
+.features_container > div {
+    background-color: #EAF2F5;
+    border-radius: 30px;
+}
+
+
+
+
+

@@ -1,0 +1,124 @@
+.learning_process h2 {
+    margin-top: 55px;
+    margin-bottom: 26px;
+}
+
+.learning_process > p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    margin: 0 auto;
+    max-width: 642px;
+}
+
+.process_features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1160px;
+    border-radius: 40px;
+    background-color: white;
+}
+.process_features > *{
+    margin-left: 53px;
+}
+
+
+.process_features p {
+    display: flex;
+    flex-direction: column;
+}
+
+.process_features p:first-child {
+    font-family: Gilroy Bold;
+    font-size: 77px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #38BFF2;
+
+    margin-top: 56px;
+    margin-bottom: 20px;
+}
+.process_features p:nth-child(2) {
+    font-family: Gilroy SemiBold;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 19px;
+}
+
+.process_features p:nth-child(3) {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 56px;
+}
+
+.start_education_container {
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 90px;
+
+    background-color: white;
+    border-radius: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 538px;
+    height:93px;
+}
+.start_education_container button {
+    color: white;
+    background-color: #F15525;
+    width: 249px;
+    height: 70px;
+    border-radius: 35px;
+    border: none;
+
+    margin-left: 14px;
+
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+.start_education_container button > img {
+    margin-left: 20px;
+}
+
+.start_education_container > p {
+    margin-right: 37px;
+    width: 214px;
+    font-family: Manrope;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+

@@ -1,0 +1,132 @@
+.cost {
+    max-width: 1160px;
+}
+
+.cost h2 {
+    margin-top: 90px;
+    margin-bottom: 35px;
+}
+
+.cost_features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 69px;
+    height: 60px;
+}
+
+.cost_features > div {
+    max-width: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cost_features > div > img{
+    width: 60px;
+    height: 60px;
+}
+
+.cost > .table_container {
+    max-width: 1160px;
+    width: 100%;
+    height: fit-content;
+
+    background-color: white;
+    border-radius: 30px;
+
+}
+
+.table_container {
+    margin-top: 40px;
+}
+
+.table_container > table {
+    margin: 40px;
+    max-width: 1081px;
+    width: 100%;
+
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.table_container > table, th, td {
+    border: none;
+    border-collapse: collapse;
+}
+
+.table_container > table > thead {
+    background-color: white;
+    
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #38BFF2;
+}
+
+.table_container > table  tr {
+    height: 57px;
+    margin-left: 10px;
+}
+
+.table_container > table > tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: none;
+}
+
+.table_container > table tfoot > tr > td {
+    background-color: white;
+
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.table_grid {
+    max-width: 1081px;
+    width: 100%;
+
+    margin: 36px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.table_grid > div {
+    display: grid;
+    grid-template-columns: 50% auto 276px;
+    align-items: center;
+}
+
+.table_grid > div > p {
+    height: 57px;
+    align-self: center;
+}
+
+.table_grid > .table_header {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: #38BFF2;
+}
